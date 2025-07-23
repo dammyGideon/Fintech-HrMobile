@@ -1,37 +1,62 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# Node modules
 node_modules/
 
-# Expo
-.expo/
-dist/
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+expo-debug.log
+
+# Build outputs
+android/
+ios/
+build/
 web-build/
-expo-env.d.ts
+dist/
+.expo/
+.expo-shared/
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# Babel cache
+.babel.cache
 
-# Metro
-.metro-health-check*
+# Metro bundler cache
+.cache/
+.haste/
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+# Watchman
+.watchmanconfig
 
-# macOS
+# macOS files
 .DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.*.local
+
+# Misc
+*.log
 *.pem
+*.jks
 
-# local env files
-.env*.local
+# Test coverage
+coverage/
 
-# typescript
-*.tsbuildinfo
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# EAS
+*.tar.gz
+*.apk
+*.ipa
+
+# npm package lock (optional if you use yarn)
+package-lock.json
+
+# yarn lock (optional if you use npm)
+# yarn.lock
